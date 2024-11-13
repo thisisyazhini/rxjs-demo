@@ -1,0 +1,42 @@
+<div class="grid grid-cols-2 gap-4 h-full">
+  <div class="col-span-1">
+    <code>
+      <pre class="overflow-x-auto p-4">
+        <span class="text-slate-500">
+{{ preview }}
+        </span>
+      </pre>
+    </code>
+  </div>
+  <div class="px-2 py-4">
+
+    <form [formGroup]="form" autocomplete="off">
+      <div class="flex flex-col gap-2">
+        <label for="name">Name</label>
+        <input class="rounded px-2 py-1 border" type="text" formControlName="name" id="name">
+      </div>
+      <div class="flex flex-col gap-2">
+        <label for="password">Password</label>
+        <input class="rounded px-2 py-1 border" type="password" formControlName="password" id="password">
+      </div>
+    </form>
+
+    <div class="mt-4">
+      <p>Status of form:</p>
+      <ul>
+        <li class="text-slate-500">
+          Form value:
+          <pre class="overflow-x-auto p-2">
+{{ formData | async }}
+          </pre>
+        </li>
+        <li class="text-slate-500">
+          Debounced Form value:
+          <pre class="overflow-x-auto p-2">
+{{ debouncedFormData | async }}
+          </pre>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

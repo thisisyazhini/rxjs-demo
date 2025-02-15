@@ -8,6 +8,7 @@ import { FormsComponent } from './routes/forms/forms.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ValueManipulationComponent } from './routes/value-manipulation/value-manipulation.component';
 import { CachingComponent } from './routes/caching/caching.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,15 +16,11 @@ import { CachingComponent } from './routes/caching/caching.component';
     BasicComponent,
     FormsComponent,
     ValueManipulationComponent,
-    CachingComponent
+    CachingComponent,
+    FooterComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    ReactiveFormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

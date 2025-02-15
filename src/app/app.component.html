@@ -1,24 +1,43 @@
-<div class="text-center p-6 text-xl font-bold border-b-2 border-slate-300">
-  RXJS Demo
-</div>
+<div class="text-center p-6 text-xl font-bold">RXJS Demo</div>
 <div>
   <ul class="flex gap-2 px-4 py-2 border-b-2 border-slate-300">
     <li>
-      <a routerLink="/basic" routerLinkActive="text-slate-950" class="text-slate-500 px-2 py-1">Basic</a>
+      <a
+        routerLink="/basic"
+        routerLinkActive="text-slate-950"
+        class="text-slate-500 px-2 py-1"
+        >Basic</a
+      >
     </li>
     <li>
-      <a routerLink="/forms" routerLinkActive="text-slate-950" class="text-slate-500 px-2 py-1">Forms</a>
+      <a
+        routerLink="/forms"
+        routerLinkActive="text-slate-950"
+        class="text-slate-500 px-2 py-1"
+        >Forms</a
+      >
     </li>
     <li>
-      <a routerLink="/value-manipulation" routerLinkActive="text-slate-950" class="text-slate-500 px-2 py-1">Value
-        Manipulation</a>
+      <a
+        routerLink="/value-manipulation"
+        routerLinkActive="text-slate-950"
+        class="text-slate-500 px-2 py-1"
+        >Value Manipulation</a
+      >
     </li>
     <li>
-      <a routerLink="/caching" routerLinkActive="text-slate-950" class="text-slate-500 px-2 py-1">Caching</a>
+      <a
+        routerLink="/caching"
+        routerLinkActive="text-slate-950"
+        class="text-slate-500 px-2 py-1"
+        >Caching</a
+      >
     </li>
   </ul>
 </div>
-
-<div class="h-full">
-  <router-outlet></router-outlet>
+<div class="flex-1 flex flex-col">
+  <div class="flex-1 p-4">
+    <router-outlet></router-outlet>
+  </div>
+  <app-footer></app-footer>
 </div>
